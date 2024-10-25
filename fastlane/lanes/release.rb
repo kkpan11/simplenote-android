@@ -192,7 +192,7 @@ platform :android do
 
     push_to_git_remote(tags: false)
 
-    build_and_upload_release(create_release: true)
+    trigger_release_build(branch_to_build: release_branch_name)
 
     create_backmerge_prs!
 
