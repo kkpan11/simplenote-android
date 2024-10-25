@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Translation-Revision-Date: 2024-09-17 09:54:02+0000
+Translation-Revision-Date: 2024-10-24 09:54:03+0000
 Plural-Forms: nplurals=2; plural=n > 1;
 Generator: GlotPress/2.4.0-alpha
 Language: id
 -->
 <resources>
+    <string name="signin_login_with_email_manually">Kami akan mengirimkan email berisi kode untuk %1$s%2$s%3$slogin atau Anda dapat login secara manual%4$s.</string>
     <string name="login_with_password_message">Masukkan kata sandi untuk akun %1$s</string>
     <string name="magic_link_confirm_code_message">Kami telah mengirimkan kode ke \n%1$s. Kode ini valid selama beberapa menit.</string>
     <string name="magic_link_confirm_code_enter_pass_label">Masukkan kata sandi</string>
