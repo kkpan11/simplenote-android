@@ -6,7 +6,7 @@ fastlane_require 'dotenv'
 UI.user_error!('Please run fastlane via `bundle exec`') unless FastlaneCore::Helper.bundler?
 
 USER_ENV_FILE_PATH = File.join(Dir.home, '.simplenoteandroid-env.default')
-PROTOTYPE_BUILD_DOMAIN = 'https://d2twmm2nzpx3bg.cloudfront.net'
+PROTOTYPE_BUILD_DOMAIN = 'https://cdn.a8c-ci.services'
 
 before_all do
   # TODO: Use EnvManager — https://github.com/wordpress-mobile/release-toolkit/pull/578
