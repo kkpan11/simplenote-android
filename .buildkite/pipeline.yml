@@ -7,7 +7,8 @@ agents:
 steps:
   - label: ":gradle: Gradle Wrapper Validation"
     command: validate_gradle_wrapper
-    plugins: [$CI_TOOLKIT_PLUGIN]
+    agents:
+      queue: linter
     notify:
       - github_commit_status:
           context: Gradle Wrapper Validation
