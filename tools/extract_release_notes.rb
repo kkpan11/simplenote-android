@@ -62,7 +62,7 @@ end
 case mode
 when :strip_pr_links
   formatted_lines = release_lines
-                    .map { |l| l.gsub(/ \[.*\]$/, '') }
+    .map { |l| l.gsub(/ \[.*\]$/, '') }
 when :keep_pr_links
   # The PR "links" are not canonical markdown links. That's not a problem on
   # GitHub where they be automatically parsed into links to the corresponding
@@ -72,7 +72,7 @@ when :keep_pr_links
   # It's probably best to update the convention in writing the release notes
   # but in the meantime let's compensate with more automation.
   formatted_lines = release_lines
-                    .map { |l| replace_pr_link_with_markdown_link(l) }
+    .map { |l| replace_pr_link_with_markdown_link(l) }
 end
 
 # It would be good to either add overriding of the file where the parsed
